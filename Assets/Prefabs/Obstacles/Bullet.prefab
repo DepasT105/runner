@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5208459343159169060}
   - component: {fileID: 2044618934198391918}
   - component: {fileID: 569348697358751521}
+  - component: {fileID: 5137704413510459499}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Special
@@ -53,10 +54,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,6 +84,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!135 &2044618934198391918
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -110,3 +114,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5137704413510459499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751712715881691587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c54e6499b7f04f53b8d1e9fdce0a4f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBeforeNextSpecial: 5
+  distanceTraveled: 25
+  specialSpeed: 5000
