@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpecialController : MonoBehaviour
-{
+public class SpecialController : MonoBehaviour {
     Rigidbody rb;
 
     private float specPosX = 0;
@@ -12,18 +11,15 @@ public class SpecialController : MonoBehaviour
     public float specialSpeed = 5000;
     private float canShoot = 0f;
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start () {
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        GameObject obj = collision.gameObject;
-        if (obj.tag == "Obstacle")
-        {
-            Destroy(obj);
-            Destroy(gameObject);
-        }
-
+     void OnCollisionEnter (Collision collision) {
+    GameObject obj = collision.gameObject;
+    if (obj.tag == "Obstacle") {
+     Debug.Log("Destroy Wall");
+      Destroy(gameObject);
     }
+    
+  }
 }

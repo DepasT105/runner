@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-  public static float[] laneXOne = {-7.6f, -2.5f };
-    public static float[] laneXTwo = {7.6f, 2.5f };
+  public static float[] laneXOne = {-8f, -3f };
+    public static float[] laneXTwo = {8f, 3f };
 
 
   #region Singleton
