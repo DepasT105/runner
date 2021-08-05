@@ -6,15 +6,16 @@
 
    public GameObject[] trackPieces;
    public GameObject[] obstaclePieces;
-   public int obstaclesLength =300;
+   public int obstaclesLength =6000;
    float[] playerOneX = GameManager.laneXOne;
    float[] playerTwoX = GameManager.laneXTwo;
    public int trackLength = 100;
+   public int numLevels =5;
    public Transform obs;
    // Start is called before the first frame update
    void Start () {
      buildMap (50);
-     buildObstacleCourse (5, obstaclesLength, 50, 100);
+     buildObstacleCourse (numLevels, obstaclesLength, 50, 100);
 
    }
 
@@ -46,6 +47,7 @@
      }
 
    }
+    
 
    void placeObstacles (int startZPos, int totalRows, int distancebtwn) {
 
