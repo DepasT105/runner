@@ -14,19 +14,11 @@ public class ObstacleController : MonoBehaviour
 
     void DestroyEffect()
     {
-        // Transform t = GetComponent<Transform>();
-        // gameObject.SetActive(false);
-        // Debug.Log("What it do baby");
-        // GameObject g = Instantiate(brokenObj, t);
-        // yield return new WaitForSeconds(2);
-        // Destroy(g);
-              gameObject.SetActive(false);
-
-         var pos = gameObject.transform.position;
-         var rotation = gameObject.transform.rotation;
-         Instantiate(brokenObj,pos,rotation);
-         Destroy(brokenObj);
-         Destroy(gameObject);
+        gameObject.SetActive(false);
+        var pos = gameObject.transform.position;
+        var rotation = gameObject.transform.rotation;
+        var brokenObjInstance = Instantiate(brokenObj, pos, rotation);
+        Destroy(gameObject);
 
     }
 

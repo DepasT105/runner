@@ -122,6 +122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2403761290983351590}
+  - component: {fileID: 3394302323599984647}
   m_Layer: 0
   m_Name: Wall broken
   m_TagString: null Obstacle
@@ -137,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2403761290983351594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.6, y: 2, z: 0}
+  m_LocalPosition: {x: -7.6, y: 3, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2996162197559182649}
@@ -149,6 +150,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3394302323599984647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403761290983351594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82ed2a6d80d9854da4453e98d1b39fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2534368598260378780
 GameObject:
   m_ObjectHideFlags: 0
